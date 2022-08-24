@@ -14,9 +14,8 @@ void texto() {
 int main() {
 
 	setlocale(LC_ALL, "Portuguese");
-	int menu,numero1,numero2,resultado;
-	float nDiv1, nDiv2, rDiv;
-
+	float numero1,numero2,resultado;
+	int menu;
 	texto();
 	printf("\n\n\n\t\t\tO que deseja fazer?\n\n");
 	printf("\t\t\t*******************\n");
@@ -34,15 +33,15 @@ int main() {
 		system("cls");
 		texto();
 		printf("Primeiro número: ");
-		scanf_s("%i", &numero1);
+		scanf_s("%f", &numero1);
 		system("cls");
 		texto();
 		printf("Segundo numero: ");
-		scanf_s("%i", &numero2);
+		scanf_s("%f", &numero2);
 		system("cls");
 		resultado = numero1 + numero2;
 		texto();
-		printf("\n\n\nO resultado da soma é %i\n\n\n", resultado);
+		printf("\n\n\nO resultado da soma é %.0f\n\n\n", resultado);
 
 
 		break;
@@ -51,15 +50,15 @@ int main() {
 		system("cls");
 		texto();
 		printf("Primeiro número: ");
-		scanf_s("%i", &numero1);
+		scanf_s("%f", &numero1);
 		system("cls");
 		texto();
 		printf("Segundo numero: ");
-		scanf_s("%i", &numero2);
+		scanf_s("%f", &numero2);
 		system("cls");
 		resultado = numero1 - numero2;
 		texto();
-		printf("\n\n\nO resultado da subtração é %i\n\n\n", resultado);
+		printf("\n\n\nO resultado da subtração é %.0f\n\n\n", resultado);
 
 		break;
 	
@@ -68,15 +67,15 @@ int main() {
 		system("cls");
 		texto();
 		printf("Primeiro número: ");
-		scanf_s("%i", &numero1);
+		scanf_s("%f", &numero1);
 		system("cls");
 		texto();
 		printf("Segundo numero: ");
-		scanf_s("%i", &numero2);
+		scanf_s("%f", &numero2);
 		system("cls");
 		resultado = numero1 * numero2;
 		texto();
-		printf("\n\n\nO resultado da multiplicação é %i\n\n\n", resultado);
+		printf("\n\n\nO resultado da multiplicação é %.0f\n\n\n", resultado);
 
 		break;
 	case 4:
@@ -84,15 +83,15 @@ int main() {
 		system("cls");
 		texto();
 		printf("Primeiro número: ");
-		scanf_s("%f", &nDiv1);
+		scanf_s("%f", &numero1);
 		system("cls");
 		texto();
 		printf("Segundo numero: ");
-		scanf_s("%f", &nDiv2);
+		scanf_s("%f", &numero2);
 		system("cls");
-		rDiv = nDiv1 / nDiv2;
+		resultado = numero1 / numero2;
 		texto();
-		printf("O resultado da divisão é %.1f\n\n\n", rDiv);
+		printf("O resultado da divisão é %.1f\n\n\n", resultado);
 
 		break;
 
